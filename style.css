@@ -5,11 +5,28 @@
     height: 700px;
     background-repeat: no-repeat;
 }
+@media screen and (max-width:600px) {
+    .wrapper {
+        background-size: 600px;
+        height: 400px;
+    }
+}
+@media screen and (max-width:600px) {
+    .logo {
+        height: 15vh;
+    }
+}
 header {
     display: flex;
     justify-content: space-between;
     margin: 0px 80px;
     padding-top: 50px;
+}
+@media screen and (max-width:600px) {
+    header {
+        margin: 0px 30px;
+        padding-top: 30px;
+    }
 }
 nav ul {
     margin: 0;
@@ -35,22 +52,36 @@ ul li {
     border: 1px solid #009345;
     border-radius: 5px;
     color: #fff;
-    padding: 7px;
+    padding: 7px 15px;
     margin-left: 15px;
 }
 .connect-section {
     margin: 50px 80px 0px 80px;
     position: relative;
 }
+@media screen and (max-width:600px) {
+    .connect-section {
+        margin: 20px 30px 0px 30px;
+    }
+}
 section h1 {
     font-size: 50px;
     color: #ffe81b;
     letter-spacing: 1px;
 }
+@media screen and (max-width:600px) {
+    section h1 {
+        font-size: 25px;
+    }
+}
 section p {
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
-    /* letter-spacing: 1px; */
+}
+@media screen and (max-width:600px) {
+    section p {
+        font-size: 15px;
+    }
 }
 .search-div {
     position: relative;
@@ -58,21 +89,115 @@ section p {
 .look-for {
     border: 1px solid pink;
     border-radius: 5px;
-    padding: 12px 120px;
+    padding: 15px 120px;
+    margin-top: 50px;
     /* margin-right: 50px; */
     position: relative;
+    outline: none;
+}
+@media screen and (max-width:600px) {
+    .look-for {
+        margin-top: 10px;
+        padding: 10px 60px;
+    }
 }
 .search-btn {
     background-color: #009345;
-    border: 1px solid #009345;
+    border: 1px solid #181d1a;
     border-radius: 5px;
     color: #fff;
     padding: 10px 30px;
     margin-left: 15px;
     position: absolute;
-    left: 275px;
-    top: 2px;
+    left: 279px;
+    bottom: 5px;
+    outline: none;
+}
+@media screen and (max-width:600px) {
+    .search-btn {
+        padding: 7px 20px;
+        left: 180px;
+        bottom: 3px;
+    }
 }
 .container {
     margin: 30px 80px;
+}
+/* .arrow {
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 10px;
+    height: 20vh;
+} */
+.text-color {
+    color: #009345;
+    font-weight: 600;
+}
+.text-font {
+    font-weight: 600;
+}
+.information {
+    background-color: burlywood;
+    height: 300px;
+    padding: 30px 80px;
+}
+#h3 {
+    color: #000;
+}
+.message-info {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: 250px;
+    height: 300px;
+    padding: 15px;
+    position: absolute;
+    top: 220px;
+    left: 300px;
+}
+.input-field {
+    border: 1px solid #c0fdcd;
+    border-radius: 5px;
+    padding: 7px 40px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.message-input {
+    border: 1px solid #c0fdcd;
+    border-radius: 5px;
+    padding: 7px 70px 60px 7px;
+    margin-bottom: 15px;
+}
+.send-btn {
+    background-color: #06b12c;
+    border: 1px solid #06b12c;
+    /* border-radius: 5px; */
+    color: #fff;
+    padding: 7px 15px;
+}
+.contact-info {
+    background-color: #06b12c;
+    width: 250px;
+    height: 400px;
+    padding: 15px;
+    color: #fff;
+    position: absolute;
+    top: 190px;
+    left: 580px;
+}
+.empty-div {
+    background-color: #fff;
+    height: 300px;
+}
+footer {
+    background-color: #181d1a;
+    color: #fff;
+    padding: 50px;
+}
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.bottom-1 {
+    flex-direction: row;
 }
